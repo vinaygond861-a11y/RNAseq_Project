@@ -1,0 +1,124 @@
+# =========================
+# Raw sequencing data
+# =========================
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# =========================
+# Alignment / large files
+# =========================
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+
+# =========================
+# Reference genome
+# =========================
+*.fa
+*.fasta
+*.fna
+*.gtf
+*.gff
+*.gff3
+
+# =========================
+# Genome indexes
+# =========================
+star_index/
+hisat2_index/
+bowtie_index/
+bwa_index/
+
+# =========================
+# FastQC
+# =========================
+*_fastqc.html
+*_fastqc.zip
+fastqc/
+
+# =========================
+# MultiQC
+# =========================
+multiqc_report.html
+multiqc_data/
+
+# =========================
+# Nextflow
+# =========================
+work/
+.nextflow/
+.nextflow.log
+.nextflow.log.*
+.nextflow_history
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+*.temp
+*.log
+
+# =========================
+# R
+# =========================
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Large compressed archives
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# =========================
+# DESeq2 temporary/output objects
+# =========================
+*.rds
+*.RData
+
+# Large RNA-seq files
+results/alignment/*.sam
+results/bam/*.bam
+results/bam/*.bai
+results/fastp/*.fastq
+
+# FastQC generated archive
+results/fastqc/*.zip
+
+# Nextflow
+work/
+.nextflow/
+.nextflow.log*

@@ -85,8 +85,8 @@ Expression Analysis
 Visualization and
 Biological Interpretation
 
----
-## Analysis Pipeline
+```
+### Analysis Pipeline
 
 The complete RNA-Seq analysis was performed through the following major steps:
 

@@ -219,3 +219,66 @@ RNAseq_Project/
 │   └── fastp/
 │
 └── workflow/
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Workflow Management:** Nextflow
+- **Operating System:** Linux / Ubuntu
+- **Quality Control:** FastQC
+- **Read Trimming:** fastp
+- **Read Alignment:** HISAT2
+- **BAM Processing:** SAMtools
+- **Gene Quantification:** featureCounts
+- **Differential Expression:** R, DESeq2
+- **Visualization:** R, ggplot2, pheatmap
+- **Data Source:** NCBI Sequence Read Archive (SRA)
+
+---
+
+## 📊 Key Findings
+
+The RNA-Seq analysis identified **2,496 genes** with statistically significant differential expression between the Water and Ciprofloxacin conditions using an adjusted p-value threshold of **< 0.05**.
+
+The major observations from the downstream analyses were:
+
+- The **MA plot** showed substantial variation in gene expression between the two conditions.
+- The **Volcano plot** highlighted a large number of statistically significant genes with both positive and negative fold changes.
+- **PCA analysis** showed clear separation between Water and Ciprofloxacin samples. PC1 explained **91%** and PC2 explained **7%** of the total variance, together accounting for **98%** of the variation.
+- The **heatmap of the top 50 differentially expressed genes** showed distinct expression patterns between Water and Ciprofloxacin samples.
+- Biological replicates within each condition clustered closely, indicating consistent expression patterns within the experimental groups.
+
+Overall, the results indicate that **Ciprofloxacin treatment substantially alters the transcriptional profile of *E. coli*.**
+
+---
+
+## 🔬 Reproducibility
+
+The NGS processing workflow was implemented using **Nextflow**, allowing the analysis steps to be organized into a reproducible workflow.
+
+The downstream differential expression analysis was performed using **R and DESeq2**.
+
+The repository contains the workflow scripts, configuration files, count data, differential expression results, and visualization outputs required to understand and reproduce the analysis.
+
+---
+
+## 🚀 Future Analysis
+
+Further analysis can be performed to investigate the biological significance of the differentially expressed genes, including:
+
+- Gene Ontology (GO) enrichment analysis
+- KEGG pathway enrichment analysis
+- Functional annotation of significant genes
+- Identification of Ciprofloxacin-responsive biological pathways
+- Further biological interpretation of candidate genes
+
+---
+
+## 👨‍💻 Project Author
+
+**Vinay Gond**
+
+MSc Bioinformatics
+
+Interested in Bioinformatics, NGS Data Analysis, Computational Biology, Transcriptomics, and Data Science.

@@ -162,7 +162,7 @@ The positive log2 fold-change values indicate higher expression in the **Water c
 The MA plot was generated from the DESeq2 results to visualize the relationship between average normalized gene expression and log2 fold change.
 
 It helps identify genes showing large expression changes between the two experimental conditions.
-
+![MA Plot](plots/MA_plot.png)
 ## Volcano Plot
 
 The volcano plot combines:
@@ -171,7 +171,30 @@ The volcano plot combines:
 - Statistical significance
 
 Genes with larger absolute fold changes and lower adjusted p-values represent stronger differential expression signals.
+![Volcano Plot](plots/Volcano_plot.png)
 
+## PCA Plot
+
+The PCA plot was used to assess overall sample-to-sample variation and the reproducibility of the experimental groups.
+
+The first principal component (PC1) explained 91% of the total variance, while the second principal component (PC2) explained 7%. Together, PC1 and PC2 captured 98% of the overall variation in the dataset.
+
+The two Water replicates clustered closely together, while the two Ciprofloxacin-treated replicates also clustered closely together. The clear separation between the Water and Ciprofloxacin groups indicates that Ciprofloxacin treatment is associated with substantial changes in the global gene-expression profile of *E. coli*.
+
+The close clustering of biological replicates also suggests good consistency within each experimental condition.
+![PCA Plot](plots/pca_plot.png)
+---
+
+## Heatmap
+
+A heatmap of the top 50 differentially expressed genes was generated using normalized and log2-transformed expression values.
+
+The heatmap revealed distinct expression patterns between Water and Ciprofloxacin-treated samples. The Water replicates showed similar expression profiles, while the Ciprofloxacin replicates also displayed highly similar patterns.
+
+Several genes showed higher relative expression in the Water condition and lower expression following Ciprofloxacin treatment, while another group showed the opposite pattern. Hierarchical clustering separated the Water and Ciprofloxacin samples into distinct clusters.
+
+Overall, the heatmap supports the PCA and differential expression analyses, indicating that Ciprofloxacin treatment produces substantial changes in the transcriptional profile of *E. coli*.
+![Heatmap](plots/heat_plot.png)
 ---
 
 # Project Structure
@@ -196,3 +219,66 @@ RNAseq_Project/
 │   └── fastp/
 │
 └── workflow/
+
+```
+
+## 🛠️ Tools & Technologies
+
+- **Workflow Management:** Nextflow
+- **Operating System:** Linux / Ubuntu
+- **Quality Control:** FastQC
+- **Read Trimming:** fastp
+- **Read Alignment:** HISAT2
+- **BAM Processing:** SAMtools
+- **Gene Quantification:** featureCounts
+- **Differential Expression:** R, DESeq2
+- **Visualization:** R, ggplot2, pheatmap
+- **Data Source:** NCBI Sequence Read Archive (SRA)
+
+---
+
+## 📊 Key Findings
+
+The RNA-Seq analysis identified **2,496 genes** with statistically significant differential expression between the Water and Ciprofloxacin conditions using an adjusted p-value threshold of **< 0.05**.
+
+The major observations from the downstream analyses were:
+
+- The **MA plot** showed substantial variation in gene expression between the two conditions.
+- The **Volcano plot** highlighted a large number of statistically significant genes with both positive and negative fold changes.
+- **PCA analysis** showed clear separation between Water and Ciprofloxacin samples. PC1 explained **91%** and PC2 explained **7%** of the total variance, together accounting for **98%** of the variation.
+- The **heatmap of the top 50 differentially expressed genes** showed distinct expression patterns between Water and Ciprofloxacin samples.
+- Biological replicates within each condition clustered closely, indicating consistent expression patterns within the experimental groups.
+
+Overall, the results indicate that **Ciprofloxacin treatment substantially alters the transcriptional profile of *E. coli*.**
+
+---
+
+## 🔬 Reproducibility
+
+The NGS processing workflow was implemented using **Nextflow**, allowing the analysis steps to be organized into a reproducible workflow.
+
+The downstream differential expression analysis was performed using **R and DESeq2**.
+
+The repository contains the workflow scripts, configuration files, count data, differential expression results, and visualization outputs required to understand and reproduce the analysis.
+
+---
+
+## 🚀 Future Analysis
+
+Further analysis can be performed to investigate the biological significance of the differentially expressed genes, including:
+
+- Gene Ontology (GO) enrichment analysis
+- KEGG pathway enrichment analysis
+- Functional annotation of significant genes
+- Identification of Ciprofloxacin-responsive biological pathways
+- Further biological interpretation of candidate genes
+
+---
+
+## 👨‍💻 Project Author
+
+**Vinay Gond**
+
+MSc Bioinformatics
+
+Interested in Bioinformatics, NGS Data Analysis, Computational Biology, Transcriptomics, and Data Science.

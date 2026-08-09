@@ -162,7 +162,7 @@ The positive log2 fold-change values indicate higher expression in the **Water c
 The MA plot was generated from the DESeq2 results to visualize the relationship between average normalized gene expression and log2 fold change.
 
 It helps identify genes showing large expression changes between the two experimental conditions.
-
+![MA Plot](plot/MA_plot.png
 ## Volcano Plot
 
 The volcano plot combines:

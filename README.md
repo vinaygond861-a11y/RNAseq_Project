@@ -171,7 +171,7 @@ The volcano plot combines:
 - Statistical significance
 
 Genes with larger absolute fold changes and lower adjusted p-values represent stronger differential expression signals.
-
+![Volcano Plot](plots/Volcano_plot.png)
 ---
 
 # Project Structure

@@ -220,7 +220,7 @@ RNAseq_Project/
 │
 └── workflow/
 
----
+```
 
 ## 🛠️ Tools & Technologies
 

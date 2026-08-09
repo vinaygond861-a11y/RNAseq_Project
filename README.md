@@ -194,6 +194,7 @@ The heatmap revealed distinct expression patterns between Water and Ciprofloxaci
 Several genes showed higher relative expression in the Water condition and lower expression following Ciprofloxacin treatment, while another group showed the opposite pattern. Hierarchical clustering separated the Water and Ciprofloxacin samples into distinct clusters.
 
 Overall, the heatmap supports the PCA and differential expression analyses, indicating that Ciprofloxacin treatment produces substantial changes in the transcriptional profile of *E. coli*.
+![Heatmap](plots/heat_plot.png)
 ---
 
 # Project Structure

@@ -172,6 +172,28 @@ The volcano plot combines:
 
 Genes with larger absolute fold changes and lower adjusted p-values represent stronger differential expression signals.
 ![Volcano Plot](plots/Volcano_plot.png)
+
+## PCA Plot
+
+The PCA plot was used to assess overall sample-to-sample variation and the reproducibility of the experimental groups.
+
+The first principal component (PC1) explained 91% of the total variance, while the second principal component (PC2) explained 7%. Together, PC1 and PC2 captured 98% of the overall variation in the dataset.
+
+The two Water replicates clustered closely together, while the two Ciprofloxacin-treated replicates also clustered closely together. The clear separation between the Water and Ciprofloxacin groups indicates that Ciprofloxacin treatment is associated with substantial changes in the global gene-expression profile of *E. coli*.
+
+The close clustering of biological replicates also suggests good consistency within each experimental condition.
+
+---
+
+## Heatmap
+
+A heatmap of the top 50 differentially expressed genes was generated using normalized and log2-transformed expression values.
+
+The heatmap revealed distinct expression patterns between Water and Ciprofloxacin-treated samples. The Water replicates showed similar expression profiles, while the Ciprofloxacin replicates also displayed highly similar patterns.
+
+Several genes showed higher relative expression in the Water condition and lower expression following Ciprofloxacin treatment, while another group showed the opposite pattern. Hierarchical clustering separated the Water and Ciprofloxacin samples into distinct clusters.
+
+Overall, the heatmap supports the PCA and differential expression analyses, indicating that Ciprofloxacin treatment produces substantial changes in the transcriptional profile of *E. coli*.
 ---
 
 # Project Structure

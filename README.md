@@ -182,7 +182,7 @@ The first principal component (PC1) explained 91% of the total variance, while t
 The two Water replicates clustered closely together, while the two Ciprofloxacin-treated replicates also clustered closely together. The clear separation between the Water and Ciprofloxacin groups indicates that Ciprofloxacin treatment is associated with substantial changes in the global gene-expression profile of *E. coli*.
 
 The close clustering of biological replicates also suggests good consistency within each experimental condition.
-![PCA Plot](plots/pca plot.png)
+![PCA Plot](plots/pca_plot.png)
 ---
 
 ## Heatmap
